@@ -3,21 +3,21 @@ namespace FormGuide\Handlx;
 
 class ReCaptchaValidator
 {
-	private $enabled;
+	private $disabled;
 	private $secret;
 	public function __construct()
 	{
-		$this->enabled=false;
+		$this->disabled=false;
 	}
 	
-	public function isEnabled()
+	public function isDisabled()
 	{
-		return $this->enabled;	
+		return $this->disabled;	
 	}
 
-	public function enable($enable)
+	public function disable($enable)
 	{
-		$this->enabled = $enable;
+		$this->disabled = $disable;
 	}
 
 	public function initSecretKey($key)
